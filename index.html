@@ -753,7 +753,7 @@
 
         function resetAnalysis() {
             // Get target numbers (custom or random)
-            //const targets = getTargetNumbers();
+            const targets = getTargetNumbers();
             if (!targets) return false; // Validation failed
             
             bot1Target = targets.bot1;
@@ -879,7 +879,7 @@
                 
                 return { bot1: bot1Num.toString(), bot2: bot2Num.toString() };
             } else {
-                return { bot1: generateValidNumber(), bot2: generateValidNumber() };
+                return { bot1: document.getElementById('agent1-target'), bot2: document.getElementById('agent2-target') };
             }
         }
 
