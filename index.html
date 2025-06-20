@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -917,5 +916,14 @@
             
             // Start the game loop
             setTimeout(gameLoop, 1000);
+        } function addLogEntry(agent, action, response) {
+            // This function is now replaced by addGuessToRound but kept for compatibility
         }
+
+        window.addEventListener('load', function() {
+            resetAnalysis();
+        });
+    </script>
+</body>
+</html>
 
